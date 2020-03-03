@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 3, 2020 9:26:29 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.ust.entity.Department" table="DEPARTMENT" schema="NARENDRA">
+        <id name="did" type="byte">
+            <column name="DID" precision="2" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="dname" type="string">
+            <column name="DNAME" length="20" />
+        </property>
+        <property name="deptheadname" type="string">
+            <column name="DEPTHEADNAME" length="20" />
+        </property>
+        <property name="deptlocation" type="string">
+            <column name="DEPTLOCATION" length="30" />
+        </property>
+    </class>
+</hibernate-mapping>
